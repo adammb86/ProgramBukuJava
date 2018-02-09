@@ -4,7 +4,7 @@ public class Tester {
 
     public static void main(String[] args) {
         Universitas.jumlahMahasiswa = 10000;
-        System.out.println(NAMA_UNIVERSITAS + " memiliki mahasiswa sebanyak" 
+        System.out.println(NAMA_UNIVERSITAS + " memiliki mahasiswa sebanyak " 
                            + Universitas.jumlahMahasiswa);
     }
 }
