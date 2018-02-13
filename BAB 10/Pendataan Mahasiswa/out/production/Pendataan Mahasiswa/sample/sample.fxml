@@ -1,0 +1,66 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label text="PENDATAAN MAHASISWA" textFill="purple"
+           GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="NIM"/>
+        <TextField fx:id="tfNIM" focusTraversable="false"
+                   promptText="Masukkan NIM"/>
+    </VBox>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Label text="Nama"/>
+        <TextField fx:id="tfNama" focusTraversable="false"
+                   promptText="Masukkan Nama"/>
+    </VBox>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Label text="Alamat"/>
+        <TextField fx:id="tfAlamat" focusTraversable="false"
+                   promptText="Masukkan Alamat"/>
+    </VBox>
+
+    <Button fx:id="btnSubmit" text="Submit" textAlignment="CENTER"
+            GridPane.columnIndex="0" GridPane.rowIndex="4"
+            onAction="#onButtonClicked"/>
+
+    <TableView fx:id="tvDataMahasiswa" GridPane.columnIndex="0"
+               GridPane.rowIndex="7" maxHeight="150">
+        <columns>
+            <TableColumn text="NIM">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nim"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Nama" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nama"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Alamat" prefWidth="200">
+                <cellValueFactory>
+                    <PropertyValueFactory property="alamat"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="8" spacing="20">
+        <Button fx:id="btnSave" text="Save Data to File" textAlignment="CENTER"
+                onAction="#onButtonClicked"/>
+        <Button fx:id="btnLoad" text="Load Data from Saved File" textAlignment="CENTER"
+                onAction="#onButtonClicked"/>
+    </HBox>
+</GridPane>
