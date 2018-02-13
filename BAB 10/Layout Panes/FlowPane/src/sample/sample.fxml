@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<!--Penggunaan FlowPane-->
+<FlowPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="CENTER" columnHalignment="LEFT" hgap="20" vgap="20"
+          orientation="VERTICAL">
+
+    <TextField fx:id="tfNama" promptText="Masukkan Nama Kamu"
+               focusTraversable="false"/>
+    <Button fx:id="btnSubmit" text="SUBMIT" textAlignment="CENTER"
+            textFill="purple"/>
+</FlowPane>

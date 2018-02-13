@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8.0.121"
+          fx:controller="sample.Controller"
+          alignment="CENTER" hgap="10" vgap="10" >
+
+    <!--Judul-->
+    <Label text="KALKULATOR SEDERHANA" textFill="purple"
+           GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <!--Textfield bilangan pertama-->
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="Masukkan Bilangan Pertama"/>
+        <TextField fx:id="tfBilanganPertama" focusTraversable="false"
+                   promptText="Masukkan Bilangan Pertama"/>
+    </VBox>
+
+    <!--Textfield bilangan kedua-->
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <Label text="Masukkan Bilangan Kedua"/>
+        <TextField fx:id="tfBilanganKedua" focusTraversable="false"
+                   promptText="Masukkan Bilangan Kedua"/>
+    </VBox>
+
+    <!--Button operasi perhitungan-->
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Button fx:id="btnTambah" text="Tambah" textAlignment="CENTER"
+                GridPane.columnIndex="0" GridPane.rowIndex="3"
+                onAction="#onButtonClicked"/>
+        <Button fx:id="btnKurang" text="Kurang" textAlignment="CENTER"
+                GridPane.columnIndex="0" GridPane.rowIndex="3"
+                onAction="#onButtonClicked"/>
+        <Button fx:id="btnKali" text="Kali" textAlignment="CENTER"
+                GridPane.columnIndex="0" GridPane.rowIndex="3"
+                onAction="#onButtonClicked"/>
+        <Button fx:id="btnBagi" text="Bagi" textAlignment="CENTER"
+                GridPane.columnIndex="0" GridPane.rowIndex="3"
+                onAction="#onButtonClicked"/>
+    </HBox>
+
+    <!--Hasil-->
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="4">
+        <Label text="Hasil"/>
+        <TextField fx:id="tfHasil" disable="true"/>
+    </VBox>
+</GridPane>

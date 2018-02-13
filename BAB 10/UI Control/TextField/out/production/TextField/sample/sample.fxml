@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10">
+
+    <!--Menambahkan TextField-->
+    <TextField fx:id="tfNama" promptText="Masukkan Nama Kamu"
+               focusTraversable="false"/>
+</GridPane>

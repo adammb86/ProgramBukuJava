@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+
+<!--Penggunaan BorderPane-->
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml" >
+
+    <top>
+        <TextField fx:id="tfNama" promptText="Masukkan Nama Kamu"
+                   focusTraversable="false"/>
+    </top>
+    <bottom>
+        <Button fx:id="btnSubmit" text="SUBMIT" textAlignment="CENTER"
+                textFill="purple"/>
+    </bottom>
+</BorderPane>

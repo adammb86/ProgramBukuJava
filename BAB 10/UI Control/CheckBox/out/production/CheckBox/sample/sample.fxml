@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10">
+
+    <!--VBox digunakan sebagai container dan akan dijelaskan pada subbab
+    berikutnya-->
+    <VBox>
+        <!--Menambahkan CheckBox-->
+        <CheckBox fx:id="cbKTP" selected="true" text="Mempunyai KTP"
+                  textAlignment="CENTER" textFill="purple"/>
+        <CheckBox fx:id="cbKK" selected="false" text="Mempunyai KK"
+                  textAlignment="CENTER" textFill="purple"/>
+        <CheckBox fx:id="cbSIM" selected="true" text="Mempunyai SIM"
+                  textAlignment="CENTER" textFill="purple"/>
+    </VBox>
+</GridPane>

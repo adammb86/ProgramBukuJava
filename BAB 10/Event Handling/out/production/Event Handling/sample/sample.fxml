@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="CENTER" vgap="10" hgap="20">
+
+    <!--TextField untuk memasukkan nama-->
+    <TextField fx:id="tfNama" promptText="Masukkan Nama Kamu"
+               focusTraversable="false"
+               GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <!--Button untuk memproses salam-->
+    <Button fx:id="btnSayHello" text="Submit" textAlignment="CENTER"
+            GridPane.columnIndex="0" GridPane.rowIndex="1"
+            onAction="#onButtonSayHelloClicked"/>
+
+    <!--Label untuk menampilkan salam kepada nama yang diinput-->
+    <Label fx:id="lblSayHello" textAlignment="CENTER"
+           GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+</GridPane>

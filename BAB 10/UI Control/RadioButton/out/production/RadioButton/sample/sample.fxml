@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10">
+
+    <!--VBox digunakan sebagai container dan akan dijelaskan pada subbab
+    berikutnya-->
+    <VBox>
+        <!--Menambahkan RadioButton-->
+        <RadioButton fx:id="rbLaki" text="Laki-Laki"
+                     textAlignment="CENTER" textFill="purple"
+                     toggleGroup="$gender">
+            <toggleGroup>
+                <ToggleGroup fx:id="gender"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="rbPerempuan" selected="true" text="Perempuan"
+                     textAlignment="CENTER" textFill="purple"
+                     toggleGroup="$gender"/>
+    </VBox>
+</GridPane>
