@@ -30,7 +30,7 @@ public class LemparException {
         FileReader baca = new FileReader(dataTumbuhan);
 
         // Kita coba lempar secara sengaja exception FileNotFoundException 
-        (walaupun data ditemukan)
+        // (walaupun data ditemukan)
         throw new FileNotFoundException();
     }
 }
