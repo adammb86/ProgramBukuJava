@@ -16,7 +16,7 @@ public class PermenGlobal {
     public static void main(String[] args) {
         Permen permenSusu = new Permen();
 
-        // Menampilkan jumlah permen yang ada saat program pertama kali berjalan
+        // Menampilkan jumlah permen yang ada saat program pertama x berjalan
         permenSusu.getJumlahPermen();
 
         // Menambah satu permen
