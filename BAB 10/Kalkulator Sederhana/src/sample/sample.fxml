@@ -16,14 +16,14 @@
     <Label text="KALKULATOR SEDERHANA" textFill="purple"
            GridPane.columnIndex="0" GridPane.rowIndex="0"/>
 
-    <!--Textfield bilangan pertama-->
+    <!--Bilangan pertama-->
     <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
         <Label text="Masukkan Bilangan Pertama"/>
         <TextField fx:id="tfBilanganPertama" focusTraversable="false"
                    promptText="Masukkan Bilangan Pertama"/>
     </VBox>
 
-    <!--Textfield bilangan kedua-->
+    <!--Bilangan kedua-->
     <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
         <Label text="Masukkan Bilangan Kedua"/>
         <TextField fx:id="tfBilanganKedua" focusTraversable="false"

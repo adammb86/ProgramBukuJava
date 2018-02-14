@@ -1,11 +1,11 @@
 package sample;
 
-public class Mahasiswa {
+public class MahasiswaModel {
     private String nim;
     private String nama;
     private String alamat;
 
-    public Mahasiswa(String nim, String nama, String alamat) {
+    public MahasiswaModel(String nim, String nama, String alamat) {
         this.nim = nim;
         this.nama = nama;
         this.alamat = alamat;

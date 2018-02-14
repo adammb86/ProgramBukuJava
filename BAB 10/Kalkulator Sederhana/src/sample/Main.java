@@ -17,7 +17,9 @@ public class Main extends Application {
         // Mengatur title pada window
         primaryStage.setTitle("Kalkulator Sederhana");
 
+        // Mengatur size window
         primaryStage.setScene(new Scene(root, 300, 275));
+
         primaryStage.show();
     }
 

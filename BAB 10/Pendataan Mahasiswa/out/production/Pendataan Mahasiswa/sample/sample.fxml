@@ -14,49 +14,64 @@
     <Label text="PENDATAAN MAHASISWA" textFill="purple"
            GridPane.columnIndex="0" GridPane.rowIndex="0"/>
 
+    <!--NIM-->
     <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
         <Label text="NIM"/>
         <TextField fx:id="tfNIM" focusTraversable="false"
                    promptText="Masukkan NIM"/>
     </VBox>
 
+    <!--Nama-->
     <VBox GridPane.columnIndex="0" GridPane.rowIndex="2">
         <Label text="Nama"/>
         <TextField fx:id="tfNama" focusTraversable="false"
                    promptText="Masukkan Nama"/>
     </VBox>
 
+    <!--Alamat-->
     <VBox GridPane.columnIndex="0" GridPane.rowIndex="3">
         <Label text="Alamat"/>
         <TextField fx:id="tfAlamat" focusTraversable="false"
                    promptText="Masukkan Alamat"/>
     </VBox>
 
+    <!--Button submit data mahasiswaModel-->
     <Button fx:id="btnSubmit" text="Submit" textAlignment="CENTER"
             GridPane.columnIndex="0" GridPane.rowIndex="4"
             onAction="#onButtonClicked"/>
 
+    <!--TableView untuk menampilkan data mahasiswaModel-->
     <TableView fx:id="tvDataMahasiswa" GridPane.columnIndex="0"
                GridPane.rowIndex="7" maxHeight="150">
+        <!--Kolom di dalam tabel-->
         <columns>
+            <!--Kolom NIM-->
             <TableColumn text="NIM">
                 <cellValueFactory>
+                    <!--Property nim (Harus disamakan dengan nama object di dalam kelas Model yang akan dibuat)-->
                     <PropertyValueFactory property="nim"/>
                 </cellValueFactory>
             </TableColumn>
+
+            <!--Kolom nama-->
             <TableColumn text="Nama" prefWidth="150">
                 <cellValueFactory>
+                    <!--Property nama (Harus disamakan dengan nama object di dalam kelas Model yang akan dibuat)-->
                     <PropertyValueFactory property="nama"/>
                 </cellValueFactory>
             </TableColumn>
+
+            <!--Kolom alamat-->
             <TableColumn text="Alamat" prefWidth="200">
                 <cellValueFactory>
+                    <!--Property alamat (Harus disamakan dengan nama object di dalam kelas Model yang akan dibuat)-->
                     <PropertyValueFactory property="alamat"/>
                 </cellValueFactory>
             </TableColumn>
         </columns>
     </TableView>
 
+    <!--Button untuk operasi file (save dan load)-->
     <HBox GridPane.columnIndex="0" GridPane.rowIndex="8" spacing="20">
         <Button fx:id="btnSave" text="Save Data to File" textAlignment="CENTER"
                 onAction="#onButtonClicked"/>
