@@ -5,7 +5,7 @@ public class FungsiLength {
         // Menampung jumlah karakter dari nama
         int jumlahKarakter = nama.length();
 
-        System.out.println("'" + nama + "' mempunyai jumlah karakter 
-                            sebanyak " + jumlahKarakter);
+        System.out.println("'" + nama + "' mempunyai jumlah karakter " +
+                "sebanyak " + jumlahKarakter);
     }
 }
