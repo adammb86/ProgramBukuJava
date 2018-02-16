@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ExceptionHandling {
 
-    public static double exceptionIf(double a, double b) {
+    public static double exceptionIf(int a, int b) {
         if (b != 0) {
             return a / b;
         } else {
