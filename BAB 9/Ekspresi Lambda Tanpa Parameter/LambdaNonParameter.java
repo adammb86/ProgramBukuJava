@@ -1,5 +1,5 @@
-public class LambdaNonParamater {
-
+public class LambdaNonParameter {
+    
     interface KatakanPadaku {
         void katakan();
     }
