@@ -10,13 +10,13 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        // Menghubungkan  Main ke sample.fxml
-        Parent root =
-                FXMLLoader.load(getClass().getResource("sample.fxml"));
+        // Menghubungkan Main ke sample.fxml
+        Parent root = 
+               FXMLLoader.load(getClass().getResource("sample.fxml"));
 
         // Mengatur title pada window
         primaryStage.setTitle("Kalkulator Sederhana");
-
+        
         // Mengatur size window
         primaryStage.setScene(new Scene(root, 300, 275));
 

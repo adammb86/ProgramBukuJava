@@ -6,13 +6,13 @@
 
 <!--Penggunaan GridPane-->
 <GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml"
+          xmlns:fx="http://javafx.com/fxml" 
           alignment="CENTER" vgap="0" hgap="0" gridLinesVisible="true">
 
     <TextField fx:id="tfNama" promptText="Masukkan Nama Kamu"
                focusTraversable="false"
                GridPane.columnIndex="0" GridPane.rowIndex="0"/>
     <Button fx:id="btnSubmit" text="SUBMIT" textAlignment="CENTER"
-            textFill="purple"
+            textFill="purple" 
             GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 </GridPane>

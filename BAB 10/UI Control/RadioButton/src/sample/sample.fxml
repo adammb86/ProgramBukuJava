@@ -6,22 +6,22 @@
 <?import javafx.scene.control.ToggleGroup?>
 
 <GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml"
+          xmlns:fx="http://javafx.com/fxml" 
           alignment="center" hgap="10" vgap="10">
 
-    <!--VBox digunakan sebagai container dan akan dijelaskan pada subbab
+    <!--VBox digunakan sebagai container dan akan dijelaskan pada subbab 
     berikutnya-->
     <VBox>
         <!--Menambahkan RadioButton-->
-        <RadioButton fx:id="rbLaki" text="Laki-Laki"
-                     textAlignment="CENTER" textFill="purple"
+        <RadioButton fx:id="rbLaki" text="Laki-Laki" 
+                     textAlignment="CENTER" textFill="purple" 
                      toggleGroup="$gender">
             <toggleGroup>
                 <ToggleGroup fx:id="gender"/>
             </toggleGroup>
         </RadioButton>
-        <RadioButton fx:id="rbPerempuan" selected="true" text="Perempuan"
-                     textAlignment="CENTER" textFill="purple"
+        <RadioButton fx:id="rbPerempuan" selected="true" text="Perempuan"                
+                     textAlignment="CENTER" textFill="purple" 
                      toggleGroup="$gender"/>
     </VBox>
 </GridPane>

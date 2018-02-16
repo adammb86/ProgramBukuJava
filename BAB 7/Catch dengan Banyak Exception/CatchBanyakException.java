@@ -9,8 +9,8 @@ public class CatchBanyakException {
         int angka;
 
         try {
-            angka=input.nextInt();
-            FileWriter fw=new FileWriter("dataAngka.txt");
+            angka = input.nextInt();
+            FileWriter fw = new FileWriter("dataAngka.txt");
             fw.write(String.valueOf(angka));
         } catch (IOException | InputMismatchException e) {
             System.out.println(e);

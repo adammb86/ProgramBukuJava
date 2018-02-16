@@ -13,7 +13,8 @@ public class Masyarakat {
         this.NIK = NIK;
     }
 
-    public void naikAngkot(Angkot angkot){ //dependensi terjadi
-        System.out.println(NIK+" naik angkot "+angkot.getNomorAngkot());
+    public void naikAngkot(Angkot angkot) {
+        // dependensi terjadi
+        System.out.println(NIK + " naik angkot " + angkot.getNomorAngkot());
     }
 }

@@ -10,7 +10,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+          xmlns:fx="http://javafx.com/fxml" 
+          alignment="center" hgap="10" vgap="10">
     <Label text="PENDATAAN MAHASISWA" textFill="purple"
            GridPane.columnIndex="0" GridPane.rowIndex="0"/>
 
@@ -48,7 +49,8 @@
             <!--Kolom NIM-->
             <TableColumn text="NIM">
                 <cellValueFactory>
-                    <!--Property nim (Harus disamakan dengan nama object di dalam kelas Model yang akan dibuat)-->
+                    <!--Property nim (Harus disamakan dengan nama  
+                    atribut di dalam kelas Model yang akan dibuat)-->
                     <PropertyValueFactory property="nim"/>
                 </cellValueFactory>
             </TableColumn>
@@ -56,7 +58,8 @@
             <!--Kolom nama-->
             <TableColumn text="Nama" prefWidth="150">
                 <cellValueFactory>
-                    <!--Property nama (Harus disamakan dengan nama object di dalam kelas Model yang akan dibuat)-->
+                    <!--Property nama (Harus disamakan dengan nama  
+                    atribut di dalam kelas Model yang akan dibuat)-->
                     <PropertyValueFactory property="nama"/>
                 </cellValueFactory>
             </TableColumn>
@@ -64,7 +67,8 @@
             <!--Kolom alamat-->
             <TableColumn text="Alamat" prefWidth="200">
                 <cellValueFactory>
-                    <!--Property alamat (Harus disamakan dengan nama object di dalam kelas Model yang akan dibuat)-->
+                    <!--Property alamat (Harus disamakan dengan nama  
+                    atribut di dalam kelas Model yang akan dibuat)-->
                     <PropertyValueFactory property="alamat"/>
                 </cellValueFactory>
             </TableColumn>
@@ -73,9 +77,11 @@
 
     <!--Button untuk operasi file (save dan load)-->
     <HBox GridPane.columnIndex="0" GridPane.rowIndex="8" spacing="20">
-        <Button fx:id="btnSave" text="Save Data to File" textAlignment="CENTER"
+        <Button fx:id="btnSave" text="Save Data to File" 
+                textAlignment="CENTER"
                 onAction="#onButtonClicked"/>
-        <Button fx:id="btnLoad" text="Load Data from Saved File" textAlignment="CENTER"
+        <Button fx:id="btnLoad" text="Load Data from Saved File" 
+                textAlignment="CENTER"
                 onAction="#onButtonClicked"/>
     </HBox>
 </GridPane>

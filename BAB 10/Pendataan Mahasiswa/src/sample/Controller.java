@@ -27,7 +27,8 @@ public class Controller {
     public void onButtonClicked(ActionEvent e) {
         if (e.getTarget().equals(btnSubmit)) {
             // Menambahkan data ke TableView saat btnSubmit ditekan
-            ObservableList<MahasiswaModel> data = tvDataMahasiswa.getItems();
+            ObservableList<MahasiswaModel> data = 
+                          tvDataMahasiswa.getItems();
             data.add(new MahasiswaModel(
                     tfNIM.getText(),
                     tfNama.getText(),
@@ -38,14 +39,18 @@ public class Controller {
             tfNama.setText("");
             tfAlamat.setText("");
         } else if (e.getTarget().equals(btnSave)) {
-            // Menulis data yang ada di TableView ke file bernama data-mahasiswa.dat
+            // Menulis data yang ada di TableView ke file bernama data-
+            // mahasiswa.dat
             try {
-                ObservableList<MahasiswaModel> data = tvDataMahasiswa.getItems();
-                BufferedWriter writer = new BufferedWriter(new FileWriter("data-mahasiswa.dat"));
+                ObservableList<MahasiswaModel> data = 
+                              tvDataMahasiswa.getItems();
+                BufferedWriter writer = new BufferedWriter(new 
+                               FileWriter("data-mahasiswa.dat"));
                 for (int i = 0; i < data.size(); i++) {
                     writer.write(String.valueOf(data.get(i).getNim()) +
-                            "," + String.valueOf(data.get(i).getNama()) + "," +
-                            String.valueOf(data.get(i).getAlamat()));
+                            "," + String.valueOf(data.get(i).getNama()) + 
+                            "," +                          
+                                 String.valueOf(data.get(i).getAlamat()));
                     writer.newLine();
                 }
                 writer.close();
@@ -59,21 +64,24 @@ public class Controller {
                 // Menampilkan dialog jika error saat menyimpan file
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
-                alert.setContentText("Error IO Exception: " + ex.getMessage());
+                alert.setContentText("Error IO Exception: " + 
+                      ex.getMessage());
                 alert.showAndWait();
             }
         } else if (e.getTarget().equals(btnLoad)) {
-            // Membaca data yang di file data-mahasiswa.dat ke
-            // TableView
+            // Membaca data yang di file data-mahasiswa.dat ke TableView
             try {
-                ObservableList<MahasiswaModel> data = tvDataMahasiswa.getItems();
+                ObservableList<MahasiswaModel> data = 
+                              tvDataMahasiswa.getItems();
                 data.clear();
-                BufferedReader reader = new BufferedReader(new FileReader("data-mahasiswa.dat"));
+                BufferedReader reader = new BufferedReader(new
+                               FileReader("data-mahasiswa.dat"));
 
                 String line;
                 while ((line = reader.readLine()) != null) {
                     String[] temp = line.split(",");
-                    MahasiswaModel mahasiswaModel = new MahasiswaModel(temp[0], temp[1], temp[2]);
+                    MahasiswaModel mahasiswaModel = new 
+                             MahasiswaModel(temp[0], temp[1], temp[2]);
                     data.add(mahasiswaModel);
                 }
                 reader.close();
@@ -87,7 +95,8 @@ public class Controller {
                 // Menampilkan dialog jika error saat membaca file
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error");
-                alert.setContentText("Error IO Exception: " + ex.getMessage());
+                alert.setContentText("Error IO Exception: " + 
+                      ex.getMessage());
                 alert.showAndWait();
             }
         }

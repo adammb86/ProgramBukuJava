@@ -15,7 +15,7 @@ public class Controller {
     @FXML
     public void onButtonSayHelloClicked(ActionEvent e) {
         //  Parameter KelasEvent bersifat opsional
-
+        
         // Menampilkan nama yang diinput di lblSayHello
         lblSayHello.setText("Hello, " + tfNama.getText());
     }

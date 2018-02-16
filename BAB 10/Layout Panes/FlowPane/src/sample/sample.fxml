@@ -6,12 +6,12 @@
 
 <!--Penggunaan FlowPane-->
 <FlowPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml"
-          alignment="CENTER" columnHalignment="LEFT" hgap="20" vgap="20"
+          xmlns:fx="http://javafx.com/fxml" 
+          alignment="CENTER" columnHalignment="LEFT" hgap="20" vgap="20" 
           orientation="VERTICAL">
 
-    <TextField fx:id="tfNama" promptText="Masukkan Nama Kamu"
-               focusTraversable="false"/>
-    <Button fx:id="btnSubmit" text="SUBMIT" textAlignment="CENTER"
-            textFill="purple"/>
+        <TextField fx:id="tfNama" promptText="Masukkan Nama Kamu"
+                   focusTraversable="false"/>
+        <Button fx:id="btnSubmit" text="SUBMIT" textAlignment="CENTER"
+                textFill="purple"/>
 </FlowPane>

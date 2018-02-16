@@ -9,7 +9,7 @@ public class ThreadSaya implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Thread "+namaThread +" dijalankan.");
+        System.out.println("Thread " + namaThread + " dijalankan.");
 
 
         try {
@@ -22,15 +22,15 @@ public class ThreadSaya implements Runnable {
             System.out.println("Thread " + namaThread + " diinterupsi.");
         }
 
-        System.out.println("Thread "+namaThread+" selesai.");
+        System.out.println("Thread " + namaThread + " selesai.");
     }
 
     public void start() {
-        System.out.println"Thread "namaThread + " dimulai.");
+        System.out.println("Thread " + namaThread + " dimulai.");
 
-        if (thread == null) { //belum diinstansiasi
+        if (thread == null) { // belum diinstansiasi
             thread = new Thread(this, namaThread);
-            thread.start(); //mempersiapkan thread ke fase runnable
+            thread.start(); // mempersiapkan thread ke fase runnable
         }
     }
 }

@@ -1,8 +1,8 @@
 public class TesterThread {
 
     public static void main(String[] args) {
-        ThreadMethod thread1=new ThreadMethod("Satu");
-        ThreadMethod thread2=new ThreadMethod("Dua");
+        ThreadMethod thread1 = new ThreadMethod("Satu");
+        ThreadMethod thread2 = new ThreadMethod("Dua");
 
         thread1.start();
         thread2.start();

@@ -3,8 +3,8 @@ import java.util.LinkedList;
 public class Tester {
 
     public static void main(String[] args) {
-        LinkedList<Dosen> listDosen=new LinkedList<>();
-        ProgramStudi programStudi=new ProgramStudi("Teknik Informatika");
+        LinkedList<Dosen> listDosen = new LinkedList<>();
+        ProgramStudi programStudi = new ProgramStudi("Teknik Informatika");
 
         listDosen.add(new Dosen("Mira Kania Sabariah"));
         listDosen.add(new Dosen("Andri Heryandi"));
@@ -13,9 +13,9 @@ public class Tester {
         programStudi.setListDosen(listDosen);
 
         System.out.println("List Dosen "
-                           +programStudi.getNamaProgramStudi());
+                + programStudi.getNamaProgramStudi());
         System.out.println("==================================");
-        for(Dosen lecturer:listDosen){
+        for (Dosen lecturer : listDosen) {
             System.out.println(lecturer.getNamaDosen());
         }
     }

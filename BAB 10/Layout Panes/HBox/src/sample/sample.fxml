@@ -6,7 +6,7 @@
 
 <!--Penggunaan HBox-->
 <HBox fx:controller="sample.Controller"
-      xmlns:fx="http://javafx.com/fxml"
+      xmlns:fx="http://javafx.com/fxml" 
       alignment="CENTER" spacing="20">
 
     <TextField fx:id="tfNama" promptText="Masukkan Nama Kamu"
