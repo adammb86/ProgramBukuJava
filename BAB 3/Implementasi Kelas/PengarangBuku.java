@@ -14,7 +14,7 @@ public class PengarangBuku {
     }
     
     public int berapaBuku(){
-        //di sini isi perintah untuk jumlah buku yang telah dibuat
-        return ...;
+        //di sini isi perintah untuk jumlah buku yang telah dibuat, misal 8
+        return 8;
     }
 }

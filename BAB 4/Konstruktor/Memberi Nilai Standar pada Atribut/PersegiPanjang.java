@@ -2,10 +2,10 @@ public class PersegiPanjang {
     private double panjang;
     private double lebar;
 
-    // tambahkan bagian konstruktor ini
-    public PersegiPanjang() {
-        this.panjang = 0;
-        this.lebar = 0;
+    // tambahkan bagian konstruktor ini setelah deklarasi atribut
+    public PersegiPanjang(double panjang, double lebar){
+        this.panjang = panjang;
+        this.lebar = lebar;
         System.out.println("Objek Persegi Panjang diinstansiasi");
     }
 

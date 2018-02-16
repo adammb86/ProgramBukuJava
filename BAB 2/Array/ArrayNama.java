@@ -8,8 +8,8 @@ public class ArrayNama {
         nama[4] = "Rizal";
 
         for (int i = 0; i < 5; i++) {
-            // Mengakses dan menampilkan array sesuai dengan variabel i yang 
-            //dijadikan sebagai indeks
+            /* Mengakses dan menampilkan array sesuai dengan variabel i yang
+            dijadikan sebagai indeks */
             System.out.println("Nama pada indeks " + i + ": " + nama[i]);
         }
     }

@@ -1,4 +1,4 @@
-import java.util.Scanner; //baris kode ini dibutuhkan
+import java.util.Scanner; //Import kelas Scanner
 
 public class InputNama {
     public static void main(String args[]) {

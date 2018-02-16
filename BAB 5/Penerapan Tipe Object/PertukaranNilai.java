@@ -19,16 +19,16 @@ public class PertukaranNilai {
         this.datadua = datadua;
     }
 
-    public void tukarNilai(){
-        temp=datasatu;
-        datasatu=datadua;
-        datadua=temp;
+    public void tukarNilai() {
+        temp = datasatu;
+        datasatu = datadua;
+        datadua = temp;
     }
 
-    public void tampilHasilTukar(){
+    public void tampilHasilTukar() {
         System.out.println("Nilai variabel satu sesudah ditukar = "
-                            +datasatu);
+                + datasatu);
         System.out.println("Nilai variabel dua sesudah ditukar  = "
-                            +datadua);
+                + datadua);
     }
 }

@@ -18,9 +18,9 @@ public class Dosen extends Manusia {
         this.matakuliah = matakuliah;
     }
 
-    public void mengajarApa(){
-        System.out.println("Saya "+nama+" umur "+umur+" mengajar "
-                            +matakuliah);
+    public void mengajarApa() {
+        System.out.println("Saya " + nama + " umur " + umur
+                + " mengajar " + matakuliah);
     }
 
     public void siapaKamu(){

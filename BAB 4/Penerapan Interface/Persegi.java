@@ -11,11 +11,11 @@ public class Persegi implements BangunDatar {
 
     @Override
     public double hitungKeliling() {
-        return 4*sisi ;
+        return 4 * sisi;
     }
 
     @Override
     public double hitungLuas() {
-        return sisi*sisi;
+        return sisi * sisi;
     }
 }

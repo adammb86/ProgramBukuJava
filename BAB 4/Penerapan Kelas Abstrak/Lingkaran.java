@@ -1,4 +1,4 @@
-public class Lingkaran extends BangunDatar{
+public class Lingkaran extends BangunDatar {
     private double r;
 
     public double getR() {
@@ -11,11 +11,11 @@ public class Lingkaran extends BangunDatar{
 
     @Override
     public double hitungKeliling() {
-        return 2*3.14*r;
+        return 2 * 3.14 * r;
     }
 
     @Override
     public double hitungLuas() {
-        return 3.14*r*r;
+        return 3.14 * r * r;
     }
 }

@@ -4,7 +4,8 @@ public class Permen {
         int jumlahPermen = 0;
 
         jumlahPermen = jumlahPermen + 1;
-        System.out.println("Jumlah permen setelah ditambah: " + jumlahPermen);
+        System.out.println("Jumlah permen setelah ditambah: " + 
+                         jumlahPermen);
     }
 
     public static void main(String[] args) {

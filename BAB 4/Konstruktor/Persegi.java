@@ -1,9 +1,9 @@
 public class Persegi {
     private double sisi;
-    
-    //tambahkan bagian konstruktor ini
-    public Persegi(){
-        this.sisi=0;
+
+    // tambahkan bagian konstruktor ini
+    public Persegi() {
+        this.sisi = 0;
         System.out.println("Objek Persegi diinstansiasi");
     }
 
@@ -15,11 +15,11 @@ public class Persegi {
         this.sisi = sisi;
     }
     
-    public double hitungKeliling(){
-        return 4*sisi;
+    public double hitungKeliling() {
+        return 4 * sisi;
     }
 
-    public double hitungLuas(){
-        return sisi*sisi;
+    public double hitungLuas() {
+        return sisi * sisi;
     }
 }

@@ -5,52 +5,54 @@ public class Percabangan4 {
         switch (bulan) {
             case 1:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Januari");
+                                   "Januari");
                 break;
             case 2:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Februari");
+                                   "Februari");
                 break;
             case 3:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Maret");
+                                   "Maret");
                 break;
             case 4:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "April");
+                                   "April");
                 break;
             case 5:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Mei");
+                                   "Mei");
                 break;
             case 6:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Juni");
+                                   "Juni");
                 break;
             case 7:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Juli");
+                                   "Juli");
                 break;
             case 8:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Agustus");
+                                   "Agustus");
                 break;
             case 9:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "September");
+                                   "September");
                 break;
             case 10:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Oktober");
+                                   "Oktober");
                 break;
             case 11:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "November");
+                                   "November");
                 break;
             case 12:
                 System.out.println("Bulan ke-" + bulan + " adalah bulan " +
-                        "Desember");
+                                   "Desember");
                 break;
+            default:
+                System.out.println("Bulan tidak dikenali");
         }
     }
 }

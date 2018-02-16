@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class TryIterator {
 
     public static void main(String[] args) {

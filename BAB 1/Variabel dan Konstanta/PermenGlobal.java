@@ -3,6 +3,7 @@ public class PermenGlobal {
     // Inisialisasi variabel jumlahPermen = 10
     int jumlahPermen = 10;
 
+    // Method untuk menampilkan jumlah permen
     public void getJumlahPermen() {
         System.out.println("Jumlah permen: " + jumlahPermen);
     }
@@ -14,9 +15,9 @@ public class PermenGlobal {
     }
 
     public static void main(String[] args) {
-        Permen permenSusu = new Permen();
+        PermenGlobal permenSusu = new PermenGlobal();
 
-        // Menampilkan jumlah permen yang ada saat program pertama x berjalan
+       // Menampilkan jumlah permen yang ada saat program pertama x berjalan
         permenSusu.getJumlahPermen();
 
         // Menambah satu permen

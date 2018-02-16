@@ -1,4 +1,4 @@
-public class Mahasiswa extends Manusia{
+public class Mahasiswa extends Manusia {
     private String nim;
     private String kelas;
 
@@ -18,8 +18,8 @@ public class Mahasiswa extends Manusia{
         this.kelas = kelas;
     }
 
-    public void kelasApa(){
-        System.out.println("Saya "+nama+" umur "+umur+" mahasiswa di kelas "
-                            +kelas);
+    public void kelasApa() {
+        System.out.println("Saya " + nama + " umur " + umur
+                + " mahasiswa di kelas " + kelas);
     }
 }

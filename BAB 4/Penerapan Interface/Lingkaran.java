@@ -11,11 +11,11 @@ public class Lingkaran implements BangunDatar {
 
     @Override
     public double hitungKeliling() {
-        return 2*3.14*r;
+        return 2 * 3.14 * r;
     }
 
     @Override
     public double hitungLuas() {
-        return 3.14*r*r;
+        return 3.14 * r * r;
     }
 }
